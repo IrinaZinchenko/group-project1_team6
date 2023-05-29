@@ -1,0 +1,14 @@
+/* Шрифты */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/* Шрифт Roboto
+font-family: 'Roboto', sans-serif;
+Варианты толщины: 300, 400, 500 и 700 */
+
+@font-face {
+  font-family: 'SF Compact Rounded';
+  src: local('SF Compact Rounded'), url("../fonts/SF-Compact-Rounded-Regular.ttf") format('truetype');
+}
+
+/* Шрифт SF Compact Rounded
+Один вариант толщины*/
