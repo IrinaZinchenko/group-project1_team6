@@ -1,0 +1,32 @@
+footer {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #F7F7F7;
+    height: 344px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+footer h3 {
+    font-family: 'SF Compact Rounded';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+footer a {
+    color: #272727;
+    text-decoration: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
