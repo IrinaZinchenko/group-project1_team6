@@ -1,11 +1,12 @@
-/* Шрифты */
+/* Импорты CSS-файлов элементов страницы */
+@import url(header.css);
+@import url(footer.css);
 
+/* Шрифты */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 /* Шрифт Roboto
 font-family: 'Roboto', sans-serif;
 Варианты толщины: 300, 400, 500 и 700 */
-
-@import url(footer.css);
 
 @font-face {
   font-family: 'SF Compact Rounded';
