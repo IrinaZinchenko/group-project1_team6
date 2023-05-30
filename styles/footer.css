@@ -9,6 +9,9 @@ footer {
 }
 
 .footer-container {
+    box-sizing: border-box;
+    padding-left: var(--container-padding-left);
+    padding-right: var(--container-padding-right);
     max-width: 1440px;
     display: flex;
     justify-content: space-between;
@@ -29,4 +32,19 @@ footer a {
 
 .underline {
     text-decoration: underline;
+}
+
+.footer-button {
+    background-color: #5661CB;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 10px 35px 9px 35px;
+    display: flex;
+    align-items: center;
+}
+
+.center-vert {
+    display: flex;
+    align-items: center;
 }
