@@ -1,5 +1,6 @@
 /* Импорты CSS-файлов элементов страницы */
 @import url(header.css);
+@import url(main.css);
 @import url(footer.css);
 
 /* Шрифты */
