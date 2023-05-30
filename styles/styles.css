@@ -5,6 +5,8 @@
 font-family: 'Roboto', sans-serif;
 Варианты толщины: 300, 400, 500 и 700 */
 
+@import url(footer.css);
+
 @font-face {
   font-family: 'SF Compact Rounded';
   src: local('SF Compact Rounded'), url("../fonts/SF-Compact-Rounded-Regular.ttf") format('truetype');
