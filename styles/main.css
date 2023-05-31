@@ -66,3 +66,39 @@
   font-size: 22px;
   line-height: 26px;
 }
+
+/* Стилизация раздела Спецпредложений */
+
+.main-container-special_offer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.main-container-special_offer-title {
+  display: flex;
+}
+
+.main-container-special_offer-title {
+  font-family: 'SF Compact Rounded';
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.go_to_discounts {
+  width: 245px;
+  height: 19px;
+  margin-left: auto;
+}
+
+.main-container-special_offers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.main-conteiner-offer {
+  height: 322px;
+  box-shadow: 0px 1px 10px rgba(208, 208, 208, 0.25);
+}
