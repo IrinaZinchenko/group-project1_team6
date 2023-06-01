@@ -1,5 +1,4 @@
 /* Импорты CSS-файлов элементов страницы */
-@import url(variables.css);
 @import url(header.css);
 @import url(main.css);
 @import url(footer.css);
@@ -17,3 +16,8 @@ font-family: 'Roboto', sans-serif;
 
 /* Шрифт SF Compact Rounded
 Один вариант толщины*/
+
+:root {
+  --container-padding-left: 36px;
+  --container-padding-right: 24px;
+}
