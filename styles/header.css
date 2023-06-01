@@ -29,6 +29,16 @@
   column-gap: 94px;
 }
 
+.top-navigation__item a {
+  text-decoration: none;
+  color: #494949;
+}
+
+.userbar {
+  display: flex;
+  column-gap: 42px;
+}
+
 .call {
   text-align: center;
 }
@@ -47,6 +57,13 @@
   color: #5661CB;
 }
 
+.top-navigation__item a:hover,
+.star a:hover,
+.cart a:hover,
+.call__link:hover {
+  opacity: 90%;
+}
+
 .header-bottom {
   height: 72px;
 
@@ -55,17 +72,22 @@
   line-height: 21px;
 }
 
+.catalog-link {
+  text-decoration: none;
+}
+
 .catalog {
   width: 300px;
   height: 40px;
-  padding: 0 10px;
-
-  display: flex;
-  align-items: center;
-  column-gap: 30px;
+  padding-top: 10px;
+  padding-left: 70px;
+  box-sizing: border-box;
 
   color: #FFFFFF;
   background-color: #5661CB;
+  background-image: url(../img/header/burger.svg);
+  background-repeat: no-repeat;
+  background-position: top 5px left 10px;
   border-radius: 4px;
 
   font-weight: 400;
@@ -80,6 +102,10 @@
 .bottom-navigation__item {
   font-weight: 500;
   text-transform: uppercase;
+}
+
+.bottom-navigation__item a {
+  text-decoration: none;
   color: #494949;
 }
 
@@ -87,9 +113,29 @@
   color: #D41A36;
 }
 
-.bottom-navigation__search input {
-  max-width: 248px;
+.bottom-navigation__search {
+  width: 248px;
   height: 40px;
+  padding: 8px 0 0 15px;
+  box-sizing: border-box;
+
+  background-image: url(../img/header/search.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 11px right 17px;
+  border: 1px solid rgba(109, 109, 109, 0.7);
+  border-radius: 6px;
+}
+
+.bottom-navigation__search input {
+  width: 180px;
+  height: 18px;
+  padding: 0;
+  border: 0;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #272727;
 }
 
 .bottom-navigation__search input::placeholder {
@@ -97,6 +143,10 @@
   font-size: 12px;
   line-height: 14px;
   color: #7D7D7D;
+}
+
+.bulk-order-link {
+  text-decoration: none;
 }
 
 .bulk-order {
@@ -110,4 +160,16 @@
   color: #FFFFFF;
   background-color: #5661CB;
   border-radius: 4px;
+}
+
+.catalog:hover,
+.bottom-navigation__item a:hover,
+.bulk-order:hover {
+  opacity: 90%;
+}
+
+.catalog:active,
+.bulk-order:active {
+  position: relative;
+  top: 1px;
 }
