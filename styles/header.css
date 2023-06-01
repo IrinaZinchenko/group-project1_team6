@@ -87,9 +87,29 @@
   color: #D41A36;
 }
 
-.bottom-navigation__search input {
-  max-width: 248px;
+.bottom-navigation__search {
+  width: 248px;
   height: 40px;
+  padding: 8px 0 0 15px;
+  box-sizing: border-box;
+
+  background-image: url(../img/header/search.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 11px right 17px;
+  border: 1px solid rgba(109, 109, 109, 0.7);
+  border-radius: 6px;
+}
+
+.bottom-navigation__search input {
+  width: 180px;
+  height: 18px;
+  padding: 0;
+  border: 0;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #272727;
 }
 
 .bottom-navigation__search input::placeholder {
