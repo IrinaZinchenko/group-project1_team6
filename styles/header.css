@@ -138,6 +138,10 @@
   color: #272727;
 }
 
+.bottom-navigation__search input:focus {
+  outline: none;
+}
+
 .bottom-navigation__search input::placeholder {
   font-weight: 400;
   font-size: 12px;
