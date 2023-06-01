@@ -14,4 +14,4 @@
 
 **Авторы проекта:**
 
-*Ирина З.* (@IrinaZinchenko), *Анастасия М.* (@sowlushka), *Татьяна С.* (@TatianaSambueva)
+*Ирина З.* ([@IrinaZinchenko](https://github.com/IrinaZinchenko)), *Анастасия М.* ([@sowlushka](https://github.com/sowlushka)), *Татьяна С.* ([@TatianaSambueva](https://github.com/TatianaSambueva))
