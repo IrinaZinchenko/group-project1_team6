@@ -29,6 +29,16 @@
   column-gap: 94px;
 }
 
+.top-navigation__item a {
+  text-decoration: none;
+  color: #494949;
+}
+
+.userbar {
+  display: flex;
+  column-gap: 42px;
+}
+
 .call {
   text-align: center;
 }
@@ -46,6 +56,14 @@
   line-height: 19px;
   color: #5661CB;
 }
+
+.top-navigation__item a:hover,
+.star a:hover,
+.cart a:hover,
+.call__link:hover {
+  opacity: 80%;
+}
+
 
 .header-bottom {
   height: 72px;
