@@ -61,9 +61,8 @@
 .star a:hover,
 .cart a:hover,
 .call__link:hover {
-  opacity: 80%;
+  opacity: 90%;
 }
-
 
 .header-bottom {
   height: 72px;
@@ -73,17 +72,22 @@
   line-height: 21px;
 }
 
+.catalog-link {
+  text-decoration: none;
+}
+
 .catalog {
   width: 300px;
   height: 40px;
-  padding: 0 10px;
-
-  display: flex;
-  align-items: center;
-  column-gap: 30px;
+  padding-top: 10px;
+  padding-left: 70px;
+  box-sizing: border-box;
 
   color: #FFFFFF;
   background-color: #5661CB;
+  background-image: url(../img/header/burger.svg);
+  background-repeat: no-repeat;
+  background-position: top 5px left 10px;
   border-radius: 4px;
 
   font-weight: 400;
@@ -98,6 +102,10 @@
 .bottom-navigation__item {
   font-weight: 500;
   text-transform: uppercase;
+}
+
+.bottom-navigation__item a {
+  text-decoration: none;
   color: #494949;
 }
 
@@ -137,6 +145,10 @@
   color: #7D7D7D;
 }
 
+.bulk-order-link {
+  text-decoration: none;
+}
+
 .bulk-order {
   width: 199px;
   height: 40px;
@@ -148,4 +160,16 @@
   color: #FFFFFF;
   background-color: #5661CB;
   border-radius: 4px;
+}
+
+.catalog:hover,
+.bottom-navigation__item a:hover,
+.bulk-order:hover {
+  opacity: 90%;
+}
+
+.catalog:active,
+.bulk-order:active {
+  position: relative;
+  top: 1px;
 }
