@@ -175,36 +175,204 @@
 
 /* Стилизация раздела Спецпредложений */
 
-.main-container-special_offer {
+.container__special-offers {
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-right: 10px;
 }
 
-.main-container-special_offer-title {
+.container__special-offers-top {
   display: flex;
-}
-
-.main-container-special_offer-title {
+  flex-direction: row;
   font-family: 'SF Compact Rounded';
   font-weight: 500;
   font-size: 36px;
   line-height: 43px;
+  color: #272727;
 }
 
-.go_to_discounts {
-  width: 245px;
-  height: 19px;
+.special-offers-link-to-discounts {
+  text-decoration: none;
+  text-decoration: underline;
+  color: #D41A36;
+  font-size: 16px;
+  text-align: center;
   margin-left: auto;
 }
 
-.main-container-special_offers {
+.container__special-offers-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 30px;
   margin-top: 30px;
 }
 
-.main-conteiner-offer {
-  height: 322px;
+.conteiner-offer {
+  height: 325px;
+  padding-bottom: 10px;
   box-shadow: 0px 1px 10px rgba(208, 208, 208, 0.25);
+}
+
+.conteiner-offer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+}
+
+.conteiner-offer-top-star {
+  margin-right: 10px;
+}
+
+.conteiner-offer-product-image {
+  height: 86px;
+  width: auto;
+  align-self: center;
+  background-image: url("/img/main_special_offers/product_img.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+.conteiner-offer-product-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 9px 9px 9px 9px;
+  box-sizing: border-box;
+  border-radius: 0px 12px 12px 0px;
+  margin-bottom: 10px;
+}
+
+.product-info-description {
+  font-family: 'SF Compact Rounded';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #272727;
+}
+
+.product-info-amount {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 5px;
+  color: #494949;
+}
+
+.product-info-format {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 3px 0 0 0;
+  color: #494949;
+}
+
+.product-info-delivery-availability {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-info-delivery {
+  margin: 9px 0 0 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: underline;
+  color: #7D7D7D;
+}
+
+.product-info-availability {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: underline;
+  color: #219653;
+  margin: 9px 0 0 0;
+}
+
+.product-info-price {
+  color: #272727;
+  font-family: 'SF Compact Rounded';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: bolder;
+  margin: 11px 0 0 0;
+
+}
+
+.product-info-action {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 9px;
+}
+
+
+.product-info-action-button-buy {
+  width: 142px;
+  height: 33px;
+  padding: 0;
+  margin-right: 9px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: white;
+
+  background-color: #5661CB;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.product-info-action-button-mark {
+  width: 55px;
+  height: fit-content;
+  padding: 0;
+  box-sizing: border-box;
+  align-self: center;
+
+  background-color: white;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 100px;
+
+}
+
+.button-mark-image {
+  width: 55px;
+  height: 33px;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 90%;
+}
+
+.product-info-price-red {
+  color: #D41A36;
+  font-family: 'SF Compact Rounded';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: bolder;
+  margin: 11px 0 0 0;
 }
