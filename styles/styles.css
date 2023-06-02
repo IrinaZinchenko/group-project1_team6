@@ -21,3 +21,16 @@ font-family: 'Roboto', sans-serif;
   --container-padding-left: 36px;
   --container-padding-right: 24px;
 }
+
+b {
+  font-weight: 500;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --container-padding-left: 20px;
+    --container-padding-right: 19px;
+  }
+}
