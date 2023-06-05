@@ -194,6 +194,14 @@ img {
   .burger {
     display: none;
   }
+
+  .bottom-navigation__catalog_media {
+    display: none;
+  }
+
+  .bottom-navigation__search_media {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1439px) and (min-width: 1000px) {
@@ -288,5 +296,87 @@ img {
 
   .call__link {
     display: none;
+  }
+
+  .header-bottom {
+    height: 36px;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .bottom-navigation {
+    width: 100%;
+    height: 100%;
+    background-color: #5661CB;
+    border-radius: 6px;
+  }
+
+  .bottom-navigation a {
+    text-decoration: none;
+    text-transform: none;
+    color: #FFFFFF;
+  }
+
+  .catalog-link {
+    display: none;
+  }
+
+  .bottom-navigation__catalog_media,
+  .bottom-navigation__item {
+    height: 100%;
+    border-right: 1px solid #FFFFFF;
+  }
+
+  .bottom-navigation__catalog_media {
+    width: 242px;
+    padding: 10px 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-around;
+
+    background-image: url(../img/header/burger.svg);
+    background-repeat: no-repeat;
+    background-position: top 3px left 10px;
+  }
+
+  .bottom-navigation__catalog_media:hover {
+    opacity: 90%;
+  }
+
+  .bottom-navigation__item {
+    width: 20%;
+    padding: 10px 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+
+    font-weight: 400;
+  }
+
+  .bottom-navigation__item a {
+    display: inline-block;
+  }
+
+  .bottom-navigation__item span {
+    color: #FFFFFF;
+  }
+
+  .bottom-navigation__search {
+    display: none;
+  }
+
+  .bulk-order-link {
+    display: none;
+  }
+
+  .bottom-navigation__search_media {
+    width: 80px;
+
+    display: flex;
+    justify-content: center;
   }
 }
