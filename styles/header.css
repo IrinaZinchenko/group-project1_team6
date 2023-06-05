@@ -1,9 +1,14 @@
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .header-container {
   height: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: 36px;
-  padding-right: 24px;
+  padding-left: var(--container-padding-left);
+  padding-right: var(--container-padding-right);
   box-sizing: border-box;
 
   display: flex;
@@ -24,9 +29,11 @@
 }
 
 .top-navigation {
+  width: 560px;
+
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  column-gap: 94px;
 }
 
 .top-navigation__item a {
@@ -35,8 +42,9 @@
 }
 
 .userbar {
+  width: 96px;
   display: flex;
-  column-gap: 42px;
+  justify-content: space-between;
 }
 
 .call {
@@ -176,4 +184,40 @@
 .bulk-order:active {
   position: relative;
   top: 1px;
+}
+
+
+/* Медиазапросы */
+@media screen and (max-width: 1439px) and (min-width: 1000px) {
+  .logo {
+    width: 158px;
+    height: 42px;
+  }
+
+  .header-top {
+    height: 91px;
+
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .top-navigation {
+    width: 391px;
+  }
+
+  .userbar {
+    width: 68px;
+    height: 22px;
+  }
+
+  .call__number {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .call__link {
+    font-size: 14px;
+    line-height: 16px;
+    color: #5661CB;
+  }
 }
