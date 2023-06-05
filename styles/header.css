@@ -389,7 +389,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .call__number {
     display: none;
   }
@@ -418,3 +418,24 @@ img {
     border-right: 0;
   }
 }
+
+@media screen and (max-width: 479px) {
+  .header-top {
+    height: 58px;
+  }
+
+  .logo {
+    width: 109px;
+    height: 29px;
+  }
+
+  .header-bottom {
+    height: 40px;
+  }
+
+  .bottom-navigation__catalog_media {
+    padding-left: 53px;
+    box-sizing: border-box;
+
+    justify-content: flex-start;
+  }
