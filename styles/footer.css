@@ -97,6 +97,23 @@ footer a {
         margin: 0px 6px;
     }
 
+    .footer-mobile-zvonok {
+        width: 150px;
+        margin: 18px auto;
+    }
+
+    #footer-mobile-button-zvonok {
+        justify-content: center;
+        border: 1px solid #5661CB;
+        border-radius: 4px;
+        width: 280px;
+        padding: 10px 26px 11px 26px;
+        margin: 19px auto;
+    }
+
+    #footer-mobile-button-zvonok:hover {
+        background-color: #F0F0F0;
+    }
 
     .footer-container2 {
         font-size: 10px;
