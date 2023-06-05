@@ -191,7 +191,7 @@ img {
 
 /* Медиазапросы */
 @media screen and (min-width: 1000px) {
-  .burger {
+  .burger-and-call {
     display: none;
   }
 
@@ -202,9 +202,13 @@ img {
   .bottom-navigation__search_media {
     display: none;
   }
+
+  .burger-and-call__call {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 1439px) and (min-width: 1000px) {
+@media screen and (max-width: 1439px) {
   .header-top {
     height: 91px;
 
@@ -262,9 +266,13 @@ img {
     width: 155px;
     height: 33px;
   }
+
+  .burger-and-call__call {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 999px) and (min-width: 768px) {
+@media screen and (max-width: 999px) {
   .header-top {
     height: 61px;
     border: 0;
@@ -378,5 +386,35 @@ img {
 
     display: flex;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  .call__number {
+    display: none;
+  }
+
+  .burger-and-call {
+    width: 80px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .burger-and-call__call {
+    display: flex;
+  }
+
+  .bottom-navigation__item {
+    display: none;
+  }
+
+  .bottom-navigation__catalog_media {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    border-right: 0;
   }
 }
