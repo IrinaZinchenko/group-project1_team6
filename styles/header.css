@@ -1,9 +1,14 @@
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .header-container {
   height: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: 36px;
-  padding-right: 24px;
+  padding-left: var(--container-padding-left);
+  padding-right: var(--container-padding-right);
   box-sizing: border-box;
 
   display: flex;
@@ -24,9 +29,11 @@
 }
 
 .top-navigation {
+  width: 560px;
+
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  column-gap: 94px;
 }
 
 .top-navigation__item a {
@@ -35,8 +42,9 @@
 }
 
 .userbar {
+  width: 96px;
   display: flex;
-  column-gap: 42px;
+  justify-content: space-between;
 }
 
 .call {
@@ -94,9 +102,11 @@
 }
 
 .bottom-navigation {
+  width: 741px;
+
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  column-gap: 71px;
 }
 
 .bottom-navigation__item {
@@ -127,7 +137,7 @@
 }
 
 .bottom-navigation__search input {
-  width: 180px;
+  width: 148px;
   height: 18px;
   padding: 0;
   border: 0;
@@ -177,3 +187,255 @@
   position: relative;
   top: 1px;
 }
+
+
+/* Медиазапросы */
+@media screen and (min-width: 1000px) {
+  .burger-and-call {
+    display: none;
+  }
+
+  .bottom-navigation__catalog_media {
+    display: none;
+  }
+
+  .bottom-navigation__search_media {
+    display: none;
+  }
+
+  .burger-and-call__call {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .header-top {
+    height: 91px;
+
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .logo {
+    width: 158px;
+    height: 42px;
+  }
+
+  .top-navigation {
+    width: 391px;
+  }
+
+  .userbar {
+    width: 68px;
+    height: 22px;
+  }
+
+  .call__number {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .call__link {
+    font-size: 14px;
+    line-height: 16px;
+    color: #5661CB;
+  }
+
+  .header-bottom {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .catalog {
+    width: 229px;
+    padding-top: 13px;
+    padding-left: 53px;
+  }
+
+  .bottom-navigation {
+    width: 513px;
+  }
+
+  .bottom-navigation__search {
+    width: 205px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .bulk-order {
+    width: 155px;
+    height: 33px;
+  }
+
+  .burger-and-call__call {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .header-top {
+    height: 61px;
+    border: 0;
+  }
+
+  .logo {
+    width: 133px;
+    height: 35px;
+  }
+
+  .top-navigation {
+    display: none;
+  }
+
+  .userbar {
+    display: none;
+  }
+
+  .call {
+    display: flex;
+    column-gap: 35px;
+  }
+
+  .call__number {
+    font-size: 20px;
+    line-height: 23px;
+    color: #494949;
+  }
+
+  .call__link {
+    display: none;
+  }
+
+  .header-bottom {
+    height: 36px;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .bottom-navigation {
+    width: 100%;
+    height: 100%;
+    background-color: #5661CB;
+    border-radius: 6px;
+  }
+
+  .bottom-navigation a {
+    text-decoration: none;
+    text-transform: none;
+    color: #FFFFFF;
+  }
+
+  .catalog-link {
+    display: none;
+  }
+
+  .bottom-navigation__catalog_media,
+  .bottom-navigation__item {
+    height: 100%;
+    border-right: 1px solid #FFFFFF;
+  }
+
+  .bottom-navigation__catalog_media {
+    width: 242px;
+    padding: 10px 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-around;
+
+    background-image: url(../img/header/burger.svg);
+    background-repeat: no-repeat;
+    background-position: top 3px left 10px;
+  }
+
+  .bottom-navigation__catalog_media:hover {
+    opacity: 90%;
+  }
+
+  .bottom-navigation__item {
+    width: 20%;
+    padding: 10px 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+
+    font-weight: 400;
+  }
+
+  .bottom-navigation__item a {
+    display: inline-block;
+  }
+
+  .bottom-navigation__item span {
+    color: #FFFFFF;
+  }
+
+  .bottom-navigation__search {
+    display: none;
+  }
+
+  .bulk-order-link {
+    display: none;
+  }
+
+  .bottom-navigation__search_media {
+    width: 80px;
+
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .call__number {
+    display: none;
+  }
+
+  .burger-and-call {
+    width: 80px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .burger-and-call__call {
+    display: flex;
+  }
+
+  .bottom-navigation__item {
+    display: none;
+  }
+
+  .bottom-navigation__catalog_media {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    border-right: 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .header-top {
+    height: 58px;
+  }
+
+  .logo {
+    width: 109px;
+    height: 29px;
+  }
+
+  .header-bottom {
+    height: 40px;
+  }
+
+  .bottom-navigation__catalog_media {
+    padding-left: 53px;
+    box-sizing: border-box;
+
+    justify-content: flex-start;
+  }
