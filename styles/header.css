@@ -102,9 +102,11 @@ img {
 }
 
 .bottom-navigation {
+  width: 741px;
+
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  column-gap: 71px;
 }
 
 .bottom-navigation__item {
@@ -135,7 +137,7 @@ img {
 }
 
 .bottom-navigation__search input {
-  width: 180px;
+  width: 148px;
   height: 18px;
   padding: 0;
   border: 0;
@@ -219,5 +221,31 @@ img {
     font-size: 14px;
     line-height: 16px;
     color: #5661CB;
+  }
+
+  .header-bottom {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .catalog {
+    width: 229px;
+    padding-top: 13px;
+    padding-left: 53px;
+  }
+
+  .bottom-navigation {
+    width: 513px;
+  }
+
+  .bottom-navigation__search {
+    width: 205px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .bulk-order {
+    width: 155px;
+    height: 33px;
   }
 }
