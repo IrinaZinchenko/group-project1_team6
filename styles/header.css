@@ -190,7 +190,7 @@ img {
 
 
 /* Медиазапросы */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 999px) {
   .burger-and-call {
     display: none;
   }
@@ -253,7 +253,7 @@ img {
   }
 
   .bottom-navigation {
-    width: 513px;
+    justify-content: space-around;
   }
 
   .bottom-navigation__search {
