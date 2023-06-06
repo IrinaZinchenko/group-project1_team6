@@ -1,8 +1,8 @@
 .main-container {
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: 36px;
-  padding-right: 24px;
+  padding-left: var(--container-padding-left);
+  padding-right: var(--container-padding-right);
   box-sizing: border-box;
 }
 
@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  column-gap: 45px;
 }
 
 .catalog-list {
@@ -59,16 +60,18 @@
 }
 
 .slider {
-  width: 1035px;
   height: 301px;
+
+  flex-grow: 1;
 
   position: relative;
 
   background: url(../img/main/best-price.png) 0% 10% no-repeat, url(../img/main/slider-background.png) no-repeat;
   box-shadow: 0px 1px 10px rgba(208, 208, 208, 0.25);
+  border-radius: 12px;
 }
 
-.slider__text {
+.slider-container {
   width: 398px;
   height: 100%;
   padding: 31px 59px 58px 56px;
@@ -76,6 +79,9 @@
 
   position: absolute;
   right: 0;
+
+  display: flex;
+  flex-direction: column;
 
   color: #FFFFFF;
   background-color: #5D68CF;
@@ -101,6 +107,10 @@
 }
 
 .slider__text-status {
+  display: flex;
+}
+
+.slider__text-status-item {
   margin-right: 30px;
 
   display: inline-block;
@@ -171,6 +181,35 @@
 .slider__text-button-cart:active {
   position: relative;
   top: 1px;
+}
+
+.guarantees {
+  width: 100%;
+  margin-top: 26px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.guarantees-container {
+  width: 1031px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.guarantees-container__item {
+  display: flex;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #272727;
+}
+
+.guarantees-container__item img {
+  margin-right: 12px;
 }
 
 /* Стилизация раздела Спецпредложений */
@@ -402,6 +441,138 @@
 }
 
 /* новое  */
+/* Медиазапросы */
+@media screen and (max-width: 1439px) {
+  .banner {
+    height: 273px;
+  }
+
+  .catalog-list {
+    width: 229px;
+    padding: 3px 10px 21px 11px;
+
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .slider {
+    height: 268px;
+  }
+
+  .slider-container {
+    width: 45%;
+    padding: 10px;
+  }
+
+  .slider__text {
+    width: 60%;
+    min-width: 227px;
+    margin: auto;
+  }
+
+  .slider__text-title,
+  .slider__text-description,
+  .slider__text-price {
+    display: inline-block;
+  }
+
+  .slider__text-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .slider__text-status-item {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+
+  /* .slider__text {
+    width: 398px;
+    height: 100%;
+    padding: 31px 59px 58px 56px;
+    box-sizing: border-box;
+  }
+
+margin-right: 30px;
+
+
+
+
+  .slider__text-status {
+    margin-right: 30px;
+  
+    display: inline-block;
+  
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: underline;
+  }
+  
+  .slider__text-price {
+    margin: 13px 0;
+  
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  
+  .slider__text-price span {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+  }
+  
+  .slider__text-action {
+    display: flex;
+  }
+  
+  .slider__text-button-buy {
+    width: 142px;
+    height: 33px;
+    padding: 0;
+    margin-right: 9px;
+  
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #272727;
+  
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .slider__text-button-cart {
+    width: 55px;
+    height: 33px;
+    padding: 5px 0 0 0;
+    box-sizing: border-box;
+  
+    background-color: #5D68CF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+  } */
+
+
+
+
+
+
+
+
+  .guarantees-container {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .container__special-offers-list {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -412,3 +583,7 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 479px) {}
