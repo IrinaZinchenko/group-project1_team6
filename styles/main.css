@@ -1,3 +1,8 @@
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .main-container {
   max-width: 1440px;
   margin: 0 auto;
@@ -440,6 +445,18 @@
   margin: 11px 0 0 0;
 }
 
+/* Стилизация дополнительных секций */
+.partners {
+  width: 100%;
+  height: 71px;
+  margin-top: 105px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* новое  */
 /* Медиазапросы */
 @media screen and (max-width: 1440px) {
@@ -499,6 +516,10 @@
   .container__special-offers-list {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   }
+
+  .partners {
+    margin-top: 98px;
+  }
 }
 
 /* решаю задачу */
@@ -517,6 +538,10 @@
 @media screen and (max-width: 1239px) {
   .container__special-offers-list {
     grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  }
+
+  .partners__item3 {
+    display: none;
   }
 }
 
@@ -584,6 +609,14 @@
   #offer10 {
     display: none;
   }
+
+  .partners {
+    margin-top: 30px;
+  }
+
+  .partners__item5 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 939px) {
@@ -636,6 +669,16 @@
   }
 
   #guarantee4 {
+    display: none;
+  }
+
+  .partners {
+    height: 65px;
+    margin-top: 42px;
+    padding: 0 10px;
+  }
+
+  .partners__item7 {
     display: none;
   }
 }
@@ -974,4 +1017,17 @@
     display: none;
   }
 
+  .partners {
+    margin-top: 35px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .partners {
+    margin-top: 20px;
+  }
+
+  .partners__item6 {
+    display: none;
+  }
 }
