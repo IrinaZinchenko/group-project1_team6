@@ -140,3 +140,9 @@ footer a {
         display: none;
     }
 }
+
+@media screen and (max-width: 480px) {
+    #footer-mobile-button-zvonok {
+        width: 70%;
+    }
+}

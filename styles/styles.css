@@ -34,3 +34,10 @@ b {
     --container-padding-right: 19px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  :root {
+    --container-padding-left: 10px;
+    --container-padding-right: 10px;
+  }
+}
