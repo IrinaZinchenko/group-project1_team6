@@ -299,7 +299,6 @@ img {
 
 .product-info-description {
   font-family: 'SF Compact Rounded';
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
@@ -307,8 +306,7 @@ img {
 }
 
 .product-info-amount {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
@@ -317,8 +315,7 @@ img {
 }
 
 .product-info-format {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
@@ -333,8 +330,7 @@ img {
 
 .product-info-delivery {
   margin: 9px 0 0 0;
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 12px;
   line-height: 14px;
@@ -343,8 +339,7 @@ img {
 }
 
 .product-info-availability {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 12px;
   line-height: 14px;
@@ -356,7 +351,6 @@ img {
 .product-info-price {
   color: #272727;
   font-family: 'SF Compact Rounded';
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 19px;
@@ -370,8 +364,7 @@ img {
 
 .product-info-price-strike {
   color: #272727;
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
@@ -437,7 +430,6 @@ img {
 .product-info-price-red {
   color: #D41A36;
   font-family: 'SF Compact Rounded';
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 19px;
@@ -446,10 +438,64 @@ img {
 }
 
 /* Стилизация дополнительных секций */
+.section-top {
+  width: 100%;
+  height: 43px;
+  margin-bottom: 32px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-top__title {
+  width: 50%;
+  margin: 0;
+
+  font-family: 'SF Compact Rounded';
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  color: #272727;
+}
+
+.section-top__link {
+  padding-top: 15px;
+  box-sizing: border-box;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.section-top__link a {
+  text-decoration: underline;
+  color: #5661CB;
+}
+
+.showroom {
+  width: 100%;
+  height: 335px;
+  margin-top: 77px;
+  box-sizing: border-box;
+}
+
+.showroom-photos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showroom-photos__item {
+  width: 32%;
+}
+
 .partners {
   width: 100%;
   height: 71px;
   margin-top: 105px;
+  margin-bottom: 12px;
   box-sizing: border-box;
 
   display: flex;
@@ -553,7 +599,7 @@ img {
   .container__special-offers-top {
     display: flex;
     flex-direction: row;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 26px;
     line-height: 31px;
@@ -598,7 +644,7 @@ img {
   .container__special-offers-top {
     display: flex;
     flex-direction: row;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 26px;
     line-height: 31px;
@@ -608,6 +654,24 @@ img {
   #offer9,
   #offer10 {
     display: none;
+  }
+
+  .section-top {
+    height: 30px;
+  }
+
+  .section-top__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .section-top__link {
+    padding-top: 3px;
+  }
+
+  .showroom {
+    height: 244px;
+    margin-top: 60px;
   }
 
   .partners {
@@ -631,7 +695,7 @@ img {
   }
 
   .container__special-offers-top {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -670,6 +734,27 @@ img {
 
   #guarantee4 {
     display: none;
+  }
+
+  .section-top {
+    height: 24px;
+    margin-bottom: 22px;
+  }
+
+  .section-top__title {
+    width: 100%;
+
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .section-top__link {
+    display: none;
+  }
+
+  .showroom {
+    height: 188px;
+    margin-top: 50px;
   }
 
   .partners {
@@ -814,6 +899,14 @@ img {
 
   .slider__text {
     width: 80%;
+  }
+
+  .showroom-photos__item {
+    width: 48%;
+  }
+
+  .showroom-photos__item3 {
+    display: none;
   }
 
   #guarantee3 {
@@ -1017,12 +1110,38 @@ img {
     display: none;
   }
 
+  .section-top__title {
+    text-align: center;
+  }
+
+  .showroom {
+    margin-top: 30px;
+  }
+
   .partners {
     margin-top: 35px;
   }
 }
 
+@media screen and (max-width: 400px) {
+  .showroom {
+    height: 280px;
+  }
+
+  .showroom-photos__item {
+    width: 100%;
+  }
+
+  .showroom-photos__item1 {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 320px) {
+  .showroom {
+    height: 230px;
+  }
+
   .partners {
     margin-top: 20px;
   }
