@@ -41,3 +41,17 @@ b {
     --container-padding-right: 10px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  :root {
+    --container-padding-left: 8px;
+    --container-padding-right: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  :root {
+    --container-padding-left: 7px;
+    --container-padding-right: 7px;
+  }
+}
