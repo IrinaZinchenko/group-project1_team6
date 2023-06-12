@@ -1058,7 +1058,7 @@ img {
     height: 80px;
     width: auto;
     align-self: center;
-    background-image: url("./img/main_special_offers/product_img.svg");
+    background-image: url("../img/main_special_offers/product_img.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
@@ -1142,7 +1142,7 @@ img {
     height: 50px;
     width: auto;
     align-self: center;
-    background-image: url("./img/main_special_offers/product_img.svg");
+    background-image: url("../img/main_special_offers/product_img.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
@@ -1317,7 +1317,7 @@ img {
     height: 50px;
     width: auto;
     align-self: center;
-    background-image: url("./img/main_special_offers/product_img.svg");
+    background-image: url("../img/main_special_offers/product_img.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -1363,7 +1363,7 @@ img {
     height: 50px;
     width: auto;
     align-self: center;
-    background-image: url("./img/main_special_offers/product_img.svg");
+    background-image: url("../img/main_special_offers/product_img.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
