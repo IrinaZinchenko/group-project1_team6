@@ -101,6 +101,60 @@ img {
   font-weight: 400;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.catalog-list {
+  width: 100%;
+  padding: 11px 15px 27px 15px;
+  box-sizing: border-box;
+
+  position: absolute;
+  z-index: 1;
+  display: none;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 10px rgba(208, 208, 208, 0.25);
+  border-radius: 4px;
+}
+
+.catalog-list__item {
+  padding: 5px 0;
+}
+
+.catalog-list__item a {
+  width: 100%;
+
+  display: inline-block;
+
+  text-decoration: none;
+  color: #272727;
+
+  background-image: url(../img/main/catalog-arrow_dark.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.catalog-list__item a:hover {
+  color: #5661CB;
+  background-image: url(../img/main/catalog-arrow_purple.svg);
+}
+
+.catalog-list__item span {
+  color: #D41A36;
+}
+
+.show {
+  display: block;
+}
+
 .bottom-navigation {
   width: 741px;
 
