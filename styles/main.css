@@ -288,7 +288,7 @@ img {
 
 
 .conteiner-offer-product-info {
-  height: 100%;
+  height: 200px;
   display: flex;
   flex-direction: column;
   padding: 9px 9px 9px 9px;
@@ -411,6 +411,8 @@ img {
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 100px;
+  margin-left: auto;
+
 
 }
 
@@ -919,14 +921,22 @@ img {
     display: none;
   }
 
+
   .conteiner-offer-product-image {
     height: 80px;
     margin-top: 10px;
+    width: 180px;
+    margin-left: 20px;
   }
 
   .product-info-description {
     font-size: 12px;
     line-height: 14px;
+    width: 140px;
+  }
+
+  .product-info-price {
+    width: 140px;
   }
 
   .product-info-amount {
@@ -952,19 +962,28 @@ img {
   }
 
   .product-info-action {
-    display: flex;
+
     margin-bottom: 20px;
     margin-top: 9px;
   }
 
+  .conteiner-offer {
+    height: 300px;
+  }
+
 
   .product-info-action-button-buy {
-    width: 130px;
     height: 31px;
+    margin: 0;
+
   }
 
   .button-mark-image {
     display: none;
+  }
+
+  .conteiner-offer-product-info {
+    height: 100px;
   }
 
   #offer1,
@@ -982,9 +1001,14 @@ img {
   #offer10 {
     display: none;
   }
+}
 
-  .conteiner-offer {
-    height: 195px;
+@media screen and (max-width: 690px) {
+  .conteiner-offer-product-image {
+    height: 80px;
+    margin-top: 10px;
+    width: 150px;
+    margin-left: 20px;
   }
 }
 
@@ -1056,15 +1080,35 @@ img {
 
   .conteiner-offer-product-image {
     height: 80px;
-    width: auto;
+    width: 150px;
     align-self: center;
     background-image: url("../img/main_special_offers/product_img.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left;
+    background-position: center;
+  }
+
+  .conteiner-offer-product-image {
+    width: 150px;
+  }
+
+  .conteiner-offer-product-info {
+    width: 150px;
+  }
+
+  .product-info-description {
+    width: 150px;
+  }
+
+  .product-info-action-button-buy {
+    width: 200px;
+    margin-left: 10px;
+  }
+
+  .product-info-action {
+    width: 200px;
   }
 }
-
 
 @media screen and (max-width: 541px) {
 
@@ -1170,6 +1214,7 @@ img {
 
   }
 
+
   .product-info-action {
     display: flex;
     margin-bottom: 20px;
@@ -1178,15 +1223,21 @@ img {
 
 
   .product-info-action-button-buy {
-    width: 130px;
+    width: 120px;
     height: 31px;
+    font-size: 12px;
+    margin-top: 10px;
   }
 
   .conteiner-offer {
     height: 195px;
   }
-}
 
+  .product-info-action {
+    margin: 0;
+    width: 150px;
+  }
+}
 
 
 @media screen and (max-width: 480px) {
