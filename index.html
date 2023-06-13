@@ -59,9 +59,40 @@
     </div>
     <div class="header-bottom">
       <div class="header-container">
-        <a class="catalog-link" href="#!">
-          <div class="catalog">Каталог</div>
-        </a>
+        <div class="dropdown">
+          <a class="catalog-link" href="#!" onclick="myFunction()">
+            <div class="catalog">Каталог</div>
+          </a>
+          <div class="catalog-list" id="myDropdown">
+            <div class="catalog-list__item">
+              <a href="#!">Стеновые материалы</a>
+            </div>
+            <div class="catalog-list__item">
+              <a href="#!">Фасадные материалы</a>
+            </div>
+            <div class="catalog-list__item">
+              <a href="#!">Строительные блоки</a>
+            </div>
+            <div class="catalog-list__item">
+              <a href="#!">Отделочные материалы</a>
+            </div>
+            <div class="catalog-list__item">
+              <a href="#!">Сухие смеси</a>
+            </div>
+            <div class="catalog-list__item">
+              <a href="#!">Благоустройство</a>
+            </div>
+            <div class="catalog-list__item">
+              <a href="#!">Лако-красочные материалы</a>
+            </div>
+            <div class="catalog-list__item">
+              <a href="#!">Прочие услуги</a>
+            </div>
+            <div class="catalog-list__item">
+              <a href="#!"><span>Распродажа товаров</span></a>
+            </div>
+          </div>
+        </div>
         <div class="bottom-navigation">
           <div class="bottom-navigation__catalog_media">
             <a href="#!">Каталог товаров</a>
@@ -95,35 +126,6 @@
     <div class="main-container">
       <section>
         <div class="banner">
-          <div class="catalog-list">
-            <div class="catalog-list__item">
-              <a href="#!">Стеновые материалы</a>
-            </div>
-            <div class="catalog-list__item">
-              <a href="#!">Фасадные материалы</a>
-            </div>
-            <div class="catalog-list__item">
-              <a href="#!">Строительные блоки</a>
-            </div>
-            <div class="catalog-list__item">
-              <a href="#!">Отделочные материалы</a>
-            </div>
-            <div class="catalog-list__item">
-              <a href="#!">Сухие смеси</a>
-            </div>
-            <div class="catalog-list__item">
-              <a href="#!">Благоустройство</a>
-            </div>
-            <div class="catalog-list__item">
-              <a href="#!">Лако-красочные материалы</a>
-            </div>
-            <div class="catalog-list__item">
-              <a href="#!">Прочие услуги</a>
-            </div>
-            <div class="catalog-list__item">
-              <a href="#!"><span>Распродажа товаров</span></a>
-            </div>
-          </div>
           <div class="slider">
             <div class="slider-container">
               <div class="slider__text">
@@ -630,6 +632,15 @@
       </div>
     </div>
   </footer>
+
+
+  <script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  </script>
 </body>
 
 </html>

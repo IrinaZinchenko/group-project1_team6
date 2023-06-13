@@ -16,55 +16,10 @@ img {
 .banner {
   width: 100%;
   height: 313px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  column-gap: 45px;
-}
-
-.catalog-list {
-  width: 300px;
-  height: 100%;
-  padding: 11px 15px 27px 15px;
-  box-sizing: border-box;
-
-  display: flex;
-  flex-direction: column;
-  row-gap: 13px;
-
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-
-  box-shadow: 0px 1px 10px rgba(208, 208, 208, 0.25);
-  border-radius: 4px;
-}
-
-.catalog-list__item a {
-  width: 100%;
-
-  display: inline-block;
-
-  text-decoration: none;
-  color: #272727;
-
-  background-image: url(../img/main/catalog-arrow_dark.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-.catalog-list__item a:hover {
-  color: #5661CB;
-  background-image: url(../img/main/catalog-arrow_purple.svg);
-}
-
-.catalog-list__item span {
-  color: #D41A36;
 }
 
 .slider {
+  width: 100%;
   height: 301px;
 
   flex-grow: 1;
@@ -77,7 +32,7 @@ img {
 }
 
 .slider-container {
-  width: 398px;
+  width: 55%;
   height: 100%;
   padding: 31px 59px 58px 56px;
   box-sizing: border-box;
@@ -199,7 +154,7 @@ img {
 }
 
 .guarantees-container {
-  width: 1031px;
+  width: 100%;
 
   display: flex;
   justify-content: space-between;
@@ -587,57 +542,9 @@ img {
 /* новое  */
 /* Медиазапросы */
 @media screen and (max-width: 1440px) {
-  .banner {
-    height: 273px;
-  }
-
-  .catalog-list {
-    width: 229px;
-    padding: 3px 10px 21px 11px;
-
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  .slider {
-    height: 268px;
-  }
-
-  .slider-container {
-    width: 45%;
-    padding: 10px;
-  }
-
-  .slider__text {
-    width: 60%;
-    min-width: 227px;
-    margin: auto;
-  }
-
-  .slider__text-title,
-  .slider__text-description,
-  .slider__text-price {
-    display: inline-block;
-  }
-
-  .slider__text-title {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .slider__text-status-item {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: auto;
-  }
-
   .guarantees {
     margin-top: 41px;
     padding: 0 15px;
-  }
-
-  .guarantees-container {
-    width: 100%;
   }
 
   .container__special-offers-list {
@@ -704,8 +611,9 @@ img {
     margin-top: 8px;
   }
 
-  .catalog-list {
-    display: none;
+  .slider-container {
+    width: 50%;
+    padding: 15px 59px 58px 56px;
   }
 
   .guarantees {
@@ -833,12 +741,10 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  .banner {
-    height: 218px;
-  }
-
-  .slider {
-    height: 215px;
+  .slider-container {
+    width: 50%;
+    padding: 15px;
+    box-sizing: border-box;
   }
 
   #guarantee4 {
