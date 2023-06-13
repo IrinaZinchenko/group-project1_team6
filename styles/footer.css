@@ -95,10 +95,10 @@ footer a {
     }
 
     .footer-mobile {
-        display: inline-block;
+        display: block;
         margin: 19px auto;
         text-align: center;
-        width: 90vw;
+        width: 100%;
         font-size: 14px;
         line-height: 16px;
 
